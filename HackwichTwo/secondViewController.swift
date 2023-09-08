@@ -9,6 +9,10 @@ import UIKit
 
 class secondViewController: UIViewController {
 
+    @IBOutlet weak var firstLabel: UILabel!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,6 +30,8 @@ class secondViewController: UIViewController {
     }
     */
     @IBAction func changeColorButtonPressed(_ sender: Any) {
+        firstLabel.text = "Hello World"
+        firstLabel.textColor = UIColor.red
         
         //When the button is pressed the background color of the view is set to purple
         
